@@ -5,10 +5,10 @@ Create a custom habit tracker app with email reminders using R Shiny, Google She
 Follow the [instructions here](https://stateful.com/blog/google-sheets-api-tutorial) to set up a service account and download the JSON file with an authentification key. Once you have done that, create a Google Sheet with a "Day" column for the date and additional columns for each habit you with to track. See the example Google Sheet provided in this repo.
 
 ## Create and Customize Your App
-Use the example provided in this repo to create and customize your R Shiny app. If you're new to Shiny, [this is a great tutorial](https://mastering-shiny.org/basic-app.html).
+Use the [example provided in this repo](https://github.com/eholdmore/ShinyHabitTracker/blob/main/app.R) to create and customize your R Shiny app. If you're new to Shiny, [this is a great tutorial](https://mastering-shiny.org/basic-app.html).
 
 ## Set Up Email Reminders
-You can set up automatic email reminders using the Python script provided in this repo. You will want to edit the script to include the sender's email, recipient's email, and the link to your Shiny app. Use ```cron``` to schedule and automate the emails by running:
+You can set up automatic email reminders using the [Python script provided in this repo](https://github.com/eholdmore/ShinyHabitTracker/blob/main/send_email.py). You will want to edit the script to include the sender's email, recipient's email, and the link to your Shiny app. Use ```cron``` to schedule and automate the emails by running:
 
 ```
 crontab -e
